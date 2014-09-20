@@ -24,7 +24,7 @@ class DefaultController extends Controller
             $em->persist($gc);
         }
         $em->flush();
-        $a = get_included_files(); sort($a); print_r($a);
+        //$a = get_included_files(); sort($a); print_r($a);
         return new JsonResponse(
             array_map(
                 function ($gc) {
