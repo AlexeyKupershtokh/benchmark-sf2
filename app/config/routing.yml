@@ -1,0 +1,4 @@
+alawar_benchmark:
+    resource: "@AlawarBenchmarkBundle/Resources/config/routing.yml"
+    prefix:   /
+
