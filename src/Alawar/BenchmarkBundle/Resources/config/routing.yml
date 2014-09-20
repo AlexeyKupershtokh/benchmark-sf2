@@ -1,0 +1,3 @@
+alawar_benchmark_homepage:
+    path:     /doctrine/{iter}
+    defaults: { _controller: AlawarBenchmarkBundle:Default:index }
