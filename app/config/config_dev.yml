@@ -7,9 +7,9 @@ framework:
         strict_requirements: true
     profiler: { only_exceptions: false }
 
-#web_profiler:
-#    toolbar: "%debug_toolbar%"
-#    intercept_redirects: "%debug_redirects%"
+web_profiler:
+    toolbar: "%debug_toolbar%"
+    intercept_redirects: "%debug_redirects%"
 
 #monolog:
 #    handlers:
@@ -34,3 +34,8 @@ framework:
 
 #swiftmailer:
 #    delivery_address: me@example.com
+
+# Twig Configuration
+twig:
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
