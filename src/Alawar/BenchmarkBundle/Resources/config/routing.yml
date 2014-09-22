@@ -1,3 +1,7 @@
 alawar_benchmark_homepage:
-    path:     /doctrine/{iter}
-    defaults: { _controller: AlawarBenchmarkBundle:Default:index }
+    path:     /insert/{iter}
+    defaults: { _controller: AlawarBenchmarkBundle:Default:insert }
+
+alawar_benchmark_select:
+    path:     /select/{iter}
+    defaults: { _controller: AlawarBenchmarkBundle:Default:select }

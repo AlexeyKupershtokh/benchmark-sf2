@@ -9,7 +9,7 @@ use Alawar\BenchmarkBundle\Entity\Giftcode;
 
 class DefaultController extends Controller
 {
-    public function indexAction($iter)
+    public function insertAction($iter)
     {
         $em = $this->getDoctrine()->getManager();
 
@@ -33,5 +33,18 @@ class DefaultController extends Controller
                 $gcs
             )
         );
+    }
+
+    public function selectAction($iter)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $result = array();
+        for ($i = 0; $i < $iter; $i++) {
+            $repository = $em->getRepository('AlawarBenchmarkBundle:Giftcode');
+            $giftcode = $repository->find($i+1);
+            $result[] = $giftcode->getGiftcode();
+        }
+        return new JsonResponse($result);
     }
 }
