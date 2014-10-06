@@ -4,8 +4,40 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b5716732156e5e8d0b9ae72187f5a432",
+    "hash": "8fc24c089239e3536986d7bface40aba",
     "packages": [
+        {
+            "name": "alexey-kupershtokh/lazy-apc-class-loader",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AlexeyKupershtokh/LazyApcClassLoader.git",
+                "reference": "e0ae7891d308056eee35972b8816bc535c3a0d15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AlexeyKupershtokh/LazyApcClassLoader/zipball/e0ae7891d308056eee35972b8816bc535c3a0d15",
+                "reference": "e0ae7891d308056eee35972b8816bc535c3a0d15",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AlexeyKupershtokh\\LazyApcClassLoader\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexey Kupershtokh",
+                    "email": "alexey.kupershtokh@gmail.com"
+                }
+            ],
+            "time": "2014-10-06 14:32:33"
+        },
         {
             "name": "doctrine/annotations",
             "version": "v1.2.0",

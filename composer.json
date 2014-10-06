@@ -12,7 +12,8 @@
         "doctrine/orm": "~2.2,>=2.2.3",
         "doctrine/doctrine-bundle": "~1.2",
         "sensio/distribution-bundle": "~3.0",
-        "sensio/framework-extra-bundle": "~3.0"
+        "sensio/framework-extra-bundle": "~3.0",
+        "alexey-kupershtokh/lazy-apc-class-loader": "~1.0"
     },
     "scripts": {
         "post-root-package-install": [
