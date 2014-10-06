@@ -26,7 +26,9 @@ $loader = new \AlexeyKupershtokh\LazyApcClassLoader\LazyApcClassLoader(
     'sf2_',
     function () {
         // init composer autoloader if ever needed
-        return require_once __DIR__ . '/../vendor/autoload.php';
+        $loader = require_once __DIR__ . '/../vendor/autoload.php';
+        $loader->unregister();
+        return $loader;
     }
 );
 $loader->register();
